@@ -1,5 +1,5 @@
 package com.cydeo.tests;
-
+//1st class
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
@@ -26,10 +26,12 @@ public class CalculatorTests {
 
         //set URL for the appium server
         URL url = new URL("http://localhost:4723/wd/hub");
+//http://localhost:4723/wd/hub => Appium server is running in our local computer at port number 4723.
+///wd/hub is the path that we add.
 
-        //launch appiumDriver
-        AppiumDriver<MobileElement> driver = new AndroidDriver<MobileElement>(url, caps);
-
+        //launch appiumDriver  AppiumDriver driver  is similar to WebDriver driver
+        AppiumDriver<MobileElement> driver = new AndroidDriver<MobileElement>(url, caps);//if iphone IOS Driver
+//(url, caps) -> we are specifying the location/url of appium server and capabilities that describe what we need from appium server.
        // System.out.println(driver.getTitle());
         System.out.println(driver.getDeviceTime());
 

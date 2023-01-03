@@ -1,5 +1,5 @@
 package com.cydeo.pages;
-
+//4
 import com.cydeo.utils.Driver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
@@ -19,6 +19,7 @@ public class CalculatorPage {
     public MobileElement equals;
 
     @AndroidFindBy(id = "com.google.android.calculator:id/result_final")
+    //from CalculatorOperationsTest>>>>> public void addTest() {
     public MobileElement result;
 
     public void multiply() {
