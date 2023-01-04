@@ -1,5 +1,5 @@
 package com.cydeo.tests;
-
+//DAY2-1: before copy-paste chrome driver under the target
 import com.cydeo.utils.ConfigurationReader;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
@@ -19,6 +19,7 @@ public class EtsyChromeTest extends WebTestBase {
         searchField.sendKeys("wooden spoon" + Keys.ENTER);
         //print number of results
         WebElement results = driver.findElement(By.xpath("//span[contains(text(),'results,')]"));
+                                                                    //dynamic result xpath copied and contains
         System.out.println("results.getText() = " + results.getText());
     }
 

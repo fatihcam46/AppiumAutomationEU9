@@ -1,5 +1,5 @@
 package com.cydeo.tests;
-
+//day2-2
 import io.appium.java_client.remote.MobileCapabilityType;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
